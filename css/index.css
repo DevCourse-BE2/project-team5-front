@@ -1,0 +1,95 @@
+/* font */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-family: Pretendard-Regular;
+}
+
+
+
+body {
+    background: #ddd;
+}
+
+
+.card {
+    margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent
+}
+
+#mypage {
+    width: 150px;
+    margin-left: 780px;
+    font-size: 20px;
+}
+
+.summary {
+    background-color: #ddd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65)
+}
+
+@media (max-width: 767px) {
+    .summary {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem
+    }
+}
+
+.row {
+    margin: 0
+}
+
+.title b {
+    font-size: 1.5rem
+}
+
+.col-2,
+.col {
+    padding: 0 1vh
+}
+
+img {
+    width: 3.5rem
+}
+
+hr {
+    margin-top: 1.25rem
+}
+.products {
+    width: 100%;
+}
+.products .price, .products .action {
+    line-height: 38px;
+}
+.products .action {
+    line-height: 38px;
+}
+
+#cartList {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+span.badge.bg-dark {
+    margin-left: 10px;
+}
+
+.delete_cart {
+    margin-left: 12px;
+    color: rgb(105, 105, 105);
+    border: none;
+    border-radius: 10%;
+    font-size: 14px;
+}

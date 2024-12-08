@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
+    <title>Grids & Circle Login</title>
+</head>
+<body>
+    <div class="login_box">
+        <div class="title">Grids & Circle Coffee ☕</div>
+        <form id="login_form" onsubmit="submitLoginForm(event)">
+            <div class="login_inputcontainer">
+                <div class="login_inputbox">
+                    <input id="email_input" class="email_input" type="text" name="email" placeholder="아이디">
+                </div>
+                <div class="login_inputbox">
+                    <input id="password_input" class="password_input" type="password" name="password" placeholder="비밀번호">
+                    <div class="href_div"></div>
+                </div>
+                <div class="login_error">*아이디 또는 비밀번호를 다시 확인해주세요.</div>
+            </div>
+            <button class="login_btn" type="submit">로그인</button>
+            <button class="join_btn" type="button" onclick="joinFunction()">회원가입</button>
+        </form>
+    </div>
+</body>
+</html>

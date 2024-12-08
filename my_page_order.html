@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids & Circle Signup</title>
+    <link rel="stylesheet" href="./css/my_page.css"/>
+    <script type="module" src="./js/my_page.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+  <div class="row justify-content-center m-4">
+    <h1 class="text-center">My Page</h1>
+  </div>
+  
+  <div class="card">
+    <div class="row">
+      <!-- 기존 마이페이지 섹션 -->
+      <div class="col-md-4 summary p-4">
+        <div>
+          <h5 class="m-0 p-0"><b>마이페이지</b></h5>
+        </div>
+        <hr>
+        <div class="mb-3">
+          <button id="edit_profile_btn" class="form-label">프로필 수정</button>
+        </div>
+        <div class="mb-3">
+          <button id="get_order_btn" class="form-label">주문 조회</button>
+        </div>
+        <div class="mb-3">
+          <button id="logout_btn" class="form-label">로그아웃</button>
+        </div>
+      </div>
+
+      <!-- 새로운 섹션 -->
+      <div class="col-md-8 new-section p-4">
+        <div>
+          <h5 class="m-0 p-0"><b>주문 조회</b></h5>
+        </div>
+        <hr>
+
+        <ul class="list-group products" id="orderList">
+
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
