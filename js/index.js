@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 클릭 이벤트 리스너 추가
     orderButton.addEventListener("click", function () {
         // 버튼 클릭 시 동작 정의
-        alert(`결제하기 버튼이 클릭되었습니다.${memberId}`);
+        alert(`주문이 접수되었습니다.`);
         console.log(cartResponse);
 
         // 필요한 데이터만 추출하여 bodyData 생성

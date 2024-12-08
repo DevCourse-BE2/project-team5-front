@@ -57,17 +57,29 @@ body {
     margin-bottom: 1rem;
 }
 
-.product-reviews h5 {
-    margin-top: 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
 .product-reviews p {
     font-size: 1rem;
     color: #ff9800;
 }
 
+.product-price {
+    background-color: lightgray;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.product-reviews-detail {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    margin-top: 2px;
+}
 
 
 

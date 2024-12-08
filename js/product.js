@@ -28,10 +28,26 @@ document.addEventListener("DOMContentLoaded", function() {
         productNameElement.textContent = `상품명: ${data.data.name}`;
 
         const productInfoElement = document.querySelector('.product-description');
-        productInfoElement.textContent = `${data.data.description}`;
+        productInfoElement.textContent = `상품 설명: ${data.data.description}`;
 
         const productPrice = document.querySelector('.product-price');
-        productPrice.textContent = `가격 : ${data.data.price}`;
+        productPrice.textContent = `가격: ${data.data.price}`;
+
+        const productReviews = document.querySelector('.product-reviews');
+        productReviews.textContent = `리뷰: (${data.data.reviews.length})개의 리뷰`;
+
+        //리뷰 추가
+        const reviewList = document.querySelector(".product-reviews");
+        for(let i = 0; i<data.data.reviews.length; i++){
+            const row = document.createElement("div");
+            row.classList.add("product-reviews-detail");
+
+            row.innerHTML = `
+            <div class="review_detail">${data.data.reviews[i].content}</div>
+            `;
+
+            reviewList.appendChild(row);
+        }
 
 
         
